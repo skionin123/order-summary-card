@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+  font-size: 16px;
+}
+
+
+.card-container {
+  position: absolute;
+  max-width: 450px;
+  background-color: hsl(225, 100%, 98%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.content{
+  text-align: center;
+  padding: 30px;
+}
+
+.title{ 
+  font-weight: 900;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.subtitle{
+  padding: 15px;
+  margin-bottom: 15px;
+  color: hsl(224, 23%, 55%);
+}
+
+.option {
+  background-color: rgba(224, 232, 255, 0.411);
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.plan-box{
+  display: flex;
+}
+
+.plan {
+  margin-left: 18px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.plan div {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.plan p {
+  color: hsl(224, 23%, 55%);
+}
+.proceed-button{
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.proceed-button:hover{
+  background-color: hsl(245, 46%, 68%);
+}
+
+.cancel-order {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-order:hover{
+  color: hsl(223, 47%, 23%);
+}
+
+.change a{
+  font-weight: 900;
+  color: hsla(245, 75%, 52%, 0.952);
+}
+
+.change a:hover {
+  text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .illustration-hero img{
+   width: 350px;
+  }
+  .card-container {
+    max-width: 85%;
+  }
+  .title {
+    font-size: 23px;
+  }
+  .option {
+    padding: 18px;
+  }
+  .plan div {
+    padding-bottom: 1px;
+    padding-top: 5px;
+  }
+  .plan {
+    margin-left: 15px;
+  }
+  .plan p {
+    font-size: 14px;
+  }
+  .change {
+    font-size: 13px;
+  }
+  .cancel-order,
+  .proceed-button {
+    font-size: 15px;
+  }
+}
